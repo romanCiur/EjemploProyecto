@@ -1,0 +1,115 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.formulario{
+    width: 100%;
+    padding: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#f3f3f3;
+    color: rgb(54, 53, 53);
+    /* box-shadow: 0 1px 0 0 rgb(25, 25, 71); */
+}
+
+.hoja{
+    width: 100%;
+    min-height: calc(100vh - 100px);
+    background-color: rgba(251, 252, 199, 0.863);
+    /* padding: 20px; */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows:auto;
+    font-family: 'Lato', sans-serif;
+
+}
+form{
+    font-family: 'Lato',sans-serif;
+    text-transform: uppercase;
+    padding:10px; 
+  }
+  label{
+      line-height: 60px;
+  }
+  button{
+    width:100px;
+    height:35px;
+    background: transparent;
+    border:1px solid #9e9e9ed5;
+    color:#474747d5;
+    font-family: 'Lato',sans-serif;
+    font-size: 16px;
+    margin:20px 0;
+  }
+  button:hover{
+      background-color:#474747d5;
+      color:#ebe8e8;
+      transition: .1s linear;
+      border:none;
+  }
+  input{
+    height:30px;
+    background-color:transparent;
+    border-top:none;
+    border-right: none;
+    border-left:none;
+    border-bottom: 2px solid #191947;
+  }
+  input, #letras{
+    width: 100%;
+    font-family: 'Lato',serif;
+    font-size: 16px;
+    color: rgb(54, 53, 53);
+  }
+  #letras{
+      background-color: #ebe8e8;
+  }
+  .hojaA{
+      width: 100%; 
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0 30px;
+      line-height: 25px;
+      font-family:'Lato', serif;
+      color: rgb(54, 53, 53);
+  }
+  .title{
+      font-size: 1.7rem;
+      line-height: 70px;
+      align-self: flex-start;
+      /* margin-top: 3rem; */
+  }
+  .coment{
+      font-family: 'Lato', sans-serif;
+      font-size: 1.2rem;
+      /* margin: 2rem 0; */
+  }
+  @media screen and (min-width: 300px) and (max-width: 700px){
+    .hoja{
+        width: 100%;
+        min-height: 80vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-gap: 10px;
+        padding: 10px;
+    }.hojaA{
+        background-color: #fff;
+    }
+    .hojaA .title{
+        padding: 5px;
+        font-family:'Lato', serif;
+        font-size: 1.5rem;
+    }
+    .formulario{  box-shadow: 0 2px 2px 0px rgb(105, 104, 104);}
+    .title{margin: 0;}
+    form{
+        padding: 0;
+        order: 2;
+    }
+}
