@@ -7,6 +7,7 @@ import { HomeComponent } from './home/home.component';
 import { DudasComponent }   from './dudas/dudas.component';
 import { RecomendacionesComponent }   from './recomendaciones/recomendaciones.component';
 import { TutorialesComponent } from './tutoriales/tutoriales.component';
+import { ContenidoTutoComponent } from './contenido-tuto/contenido-tuto.component';
 
 const routes: Routes = [
   {
@@ -24,6 +25,10 @@ const routes: Routes = [
   {
     path: 'tutoriales',
     component: TutorialesComponent
+  },
+  {
+    path: 'contenido-tuto',
+    component: ContenidoTutoComponent
   },
   { path: '', redirectTo: '/home', pathMatch: 'full' }
 ]
