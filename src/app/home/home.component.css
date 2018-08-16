@@ -59,10 +59,7 @@ section p{
     
     
         background-image:
-        repeating-linear-gradient(-45deg, transparent, transparent 5px,
-        #3f3f3f5d 5px,#038162 10px),
-      repeating-linear-gradient(45deg, transparent, transparent 5px,
-        rgb(233, 236, 22) 5px, rgba(231, 7, 7, 0.815) 10px);
+        linear-gradient(-45deg, #95C623,#FFFAE5);
     }
     section h1{
         font-size: 2.15rem;
